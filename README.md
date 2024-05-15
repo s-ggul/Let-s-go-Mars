@@ -1,2 +1,3 @@
 # Let-s-go-Mars
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+
+- 충분히 놀았다 공부하자
