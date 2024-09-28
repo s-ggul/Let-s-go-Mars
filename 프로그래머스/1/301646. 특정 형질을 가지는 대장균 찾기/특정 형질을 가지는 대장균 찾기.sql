@@ -1,0 +1,8 @@
+SELECT COUNT(*) AS COUNT
+  FROM (
+        SELECT *
+          FROM ECOLI_DATA
+         WHERE (GENOTYPE & 2) = 0
+  ) NO_2ND_GENO
+ WHERE (GENOTYPE & 1) != 0
+    OR (GENOTYPE & 4) != 0;
