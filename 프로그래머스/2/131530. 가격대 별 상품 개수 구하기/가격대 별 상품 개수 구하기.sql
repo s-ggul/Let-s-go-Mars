@@ -1,0 +1,7 @@
+# 구간을 가지는 것은 FLOOR, CEIL 함수를 사용하는 것을 권장 
+  # ROUND 에 대한 사용법도 익혀놓을 것.
+  
+  SELECT  FLOOR(PRICE / 10000) * 10000 AS `PRICE_GROUP`,COUNT(*) AS `PRODUCTS`
+    FROM PRODUCT 
+GROUP BY PRICE_GROUP
+ORDER BY PRICE_GROUP ASC;
