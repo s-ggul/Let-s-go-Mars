@@ -18,13 +18,10 @@ class Solution {
         
         Set<String> keySet = clothMap.keySet();
         
-        
         for(String key : keySet){
             answer *= clothMap.get(key).size() + 1; // 안입는 경우
         }
         
         return answer - 1; // 모두 안입는 경우 제외
     }
-
-
 }
