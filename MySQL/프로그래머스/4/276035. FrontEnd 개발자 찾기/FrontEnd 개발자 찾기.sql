@@ -1,0 +1,11 @@
+WITH CTE_FRONT AS (
+    SELECT *
+      FROM SKILLCODES
+     WHERE CATEGORY = 'Front End'
+)
+
+# 여러개의 front 스킬을 가진 경우가 있기 때문에 distinct 키워드를 사용해야함.
+   SELECT DISTINCT D.ID, D.EMAIL, D.FIRST_NAME, D.LAST_NAME
+     FROM DEVELOPERS D, CTE_FRONT C
+    WHERE D.SKILL_CODE & C.CODE != 0
+ ORDER BY D.ID ASC;
